@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js" ></script>
+    <title>Random Horrific kittens</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Random Horrific kittens</h1>
+            <h3>Enjoy for hours watching horrendous cats</h3>
+        </header>
+        <div id="errors"></div>
+        <section>
+            <div class="imgCat-container">
+                <div id="imgCat1" class="imgCat" >
+                    <button type="button" class="add-to-favorite" >💚</button>
+                    <img id="img1" alt="Foto de Gatito aleatoria 1" class="random-cat">
+                </div>
+                <div id="imgCat2" class="imgCat" >
+                    <button type="button" class="add-to-favorite" >💚</button>
+                    <img id="img2" alt="Foto de Gatito aleatoria 2" class="random-cat">
+                </div>
+                <div id="imgCat3" class="imgCat" >
+                    <button type="button" class="add-to-favorite" >💚</button>
+                    <img id="img3" alt="Foto de Gatito aleatoria 3" class="random-cat">
+                </div>
+            </div>
+            <div>
+                <button type="button" id="showAnotherCats">Show other Cats</button>
+            </div>
+        </section>
+
+
+        <section id="upLoadingcats" class="upLoadingcats">
+            <h2>Upload a picture of a gruesome little cat</h2>
+
+            <form id="upLoadingForm">
+                <input type="file" id="file" name="file" class="file-select">
+                <button type="button" id="saveNewcat" onclick="upLoadCatPhoto()" >add ugly cat</button>
+            </form>
+        </section>
+
+
+        <section id="favorite-cats" >
+            <button type="button" id="showFavoriteCats">Show favorite Cats</button>
+            <div id="containFavorites" class="imgCat-container" ></div>
+        </section>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

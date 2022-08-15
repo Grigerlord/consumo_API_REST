@@ -1,0 +1,113 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+}
+header {
+    display: grid;
+    justify-items: center;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+}
+
+.imgCat-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px
+}
+
+.add-to-favorite, .remove-of-favorite {
+    position: absolute;
+
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+}
+
+.add-to-favorite:hover, .remove-of-favorite:hover {
+    background-color: aquamarine;
+    border: none;
+}
+
+#favorite-cats {
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: #51eaf0;
+}
+
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 40px;
+    background-size: contain;
+    position: relative;
+}
+
+
+#errors {
+    color: brown;
+    background-color: rgb(236, 185, 185);
+    border-radius: 40px;
+    width: 50vw;
+    margin-top: 100px;
+    padding: 30px;
+    display: none;
+}
+
+.upLoadingcats {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    margin: 40px;
+}
+
+.file-select {
+    position: relative;
+    display: inline-block;
+}
+
+.file-select::before {
+    background-color: #ffffff;
+    color: rgb(116, 116, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Drag the file at here';
+    box-shadow: inset 1px 2px 7px 1px rgba(0,0,0,0.25);
+    /* texto por defecto */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-select input[type="file"] {
+    opacity: 0;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+}
